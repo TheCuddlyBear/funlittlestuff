@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "funlittlestuff",
+  "version": "${version}",
+  "name": "funlittlestuff",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/funlittlestuff/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.thecuddlybear.funlittlestuff.client.FunlittlestuffDataGenerator"
+    ],
+    "client": [
+      "me.thecuddlybear.funlittlestuff.client.FunlittlestuffClient"
+    ],
+    "main": [
+      "me.thecuddlybear.funlittlestuff.Funlittlestuff"
+    ]
+  },
+  "mixins": [
+    "funlittlestuff.mixins.json",
+    {
+      "config": "funlittlestuff.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

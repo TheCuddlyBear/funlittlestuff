@@ -1,0 +1,3 @@
+/summon funlittlestuff:shroomie
+/kill @e[]
+/summon funlittlestuff:shroomie
